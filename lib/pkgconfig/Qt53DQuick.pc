@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 3DQuick
+Description: Qt 3DQuick module
+Version: 5.11.0
+Libs: -L${libdir} -lQt53DQuick 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Quick -L/home/beam/Desktop/qt5-static/lib -L/home/beam/Desktop/qt5-static/lib -lQt53DCore -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Qml -lrt -lQt5Network -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lGL 
+Cflags: -DQT_3DQUICK_LIB -I${includedir}/Qt3DQuick -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt5Quick Qt53DCore
+

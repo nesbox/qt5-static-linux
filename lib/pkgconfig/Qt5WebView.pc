@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 WebView
+Description: Qt WebView module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5WebView 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -L/home/beam/Desktop/qt5-static/lib -lQt5Quick -L/home/beam/Desktop/qt5-static/lib -lQt5Gui -lqtlibpng -lqtharfbuzz -lQt5Qml -lrt -lQt5Network -lQt5Core -lpthread -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lGL 
+Cflags: -DQT_WEBVIEW_LIB -I${includedir}/QtWebView -I${includedir}
+Requires: Qt5Core Qt5Gui
+

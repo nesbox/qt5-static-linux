@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 MultimediaWidgets
+Description: Qt MultimediaWidgets module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5MultimediaWidgets 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Multimedia -L/home/beam/Desktop/qt5-static/lib -lQt5Widgets -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Network -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lQt5OpenGL -L/home/beam/Desktop/qt5-static/lib -lQt5Widgets -lQt5Gui -lqtlibpng -lqtharfbuzz -lQt5Core -lpthread -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lGL 
+Cflags: -DQT_MULTIMEDIAWIDGETS_LIB -I${includedir}/QtMultimediaWidgets -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Multimedia Qt5Widgets
+

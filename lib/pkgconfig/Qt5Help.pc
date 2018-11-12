@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Help
+Description: Qt Help module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Help 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Widgets -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Sql -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lQt5Network -L/home/beam/Desktop/qt5-static/lib -lQt5Core -lpthread -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lGL 
+Cflags: -DQT_HELP_LIB -I${includedir}/QtHelp -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets Qt5Sql
+

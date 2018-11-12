@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Positioning
+Description: Qt Positioning module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Positioning 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -L/home/beam/Desktop/qt5-static/lib -lclip2tri -lpoly2tri -lclipper 
+Cflags: -DQT_POSITIONING_LIB -I${includedir}/QtPositioning -I${includedir}
+Requires: Qt5Core
+

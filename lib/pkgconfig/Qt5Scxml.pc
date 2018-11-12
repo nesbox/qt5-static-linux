@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Scxml
+Description: Qt Scxml module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Scxml 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Qml -L/home/beam/Desktop/qt5-static/lib -lrt -lQt5Network -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread  
+Cflags: -DQT_SCXML_LIB -I${includedir}/QtScxml -I${includedir}
+Requires: Qt5Core Qt5Qml
+

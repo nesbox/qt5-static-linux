@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 3DAnimation
+Description: Qt 3DAnimation module
+Version: 5.11.0
+Libs: -L${libdir} -lQt53DAnimation 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt53DRender -L/home/beam/Desktop/qt5-static/lib -lQt5OpenGLExtensions -lQt53DCore -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Network -lQt5Concurrent -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lGL 
+Cflags: -DQT_3DANIMATION_LIB -I${includedir}/Qt3DAnimation -I${includedir}
+Requires: Qt5Core Qt5Gui Qt53DCore Qt53DRender
+

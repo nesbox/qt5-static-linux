@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Quick
+Description: Qt Quick module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Quick 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -L/home/beam/Desktop/qt5-static/lib -lQt5Qml -lrt -lQt5Network -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lQt5Network -L/home/beam/Desktop/qt5-static/lib -lQt5Core -lpthread -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lGL 
+Cflags: -DQT_QUICK_LIB -I${includedir}/QtQuick -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml
+

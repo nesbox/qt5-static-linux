@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Multimedia
+Description: Qt Multimedia module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Multimedia 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Network -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lGL 
+Cflags: -DQT_MULTIMEDIA_LIB -I${includedir}/QtMultimedia -I${includedir}
+Requires: Qt5Core Qt5Network Qt5Gui
+

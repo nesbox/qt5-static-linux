@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Gui
+Description: Qt Gui module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Gui 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lGL -L/home/beam/Desktop/qt5-static/lib -lqtlibpng -lQt5Core -lpthread -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lqtharfbuzz 
+Cflags: -DQT_GUI_LIB -I${includedir}/QtGui -I${includedir}
+Requires: Qt5Core
+

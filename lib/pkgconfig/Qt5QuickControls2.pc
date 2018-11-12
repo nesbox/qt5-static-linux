@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QuickControls2
+Description: Qt QuickControls2 module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5QuickControls2 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Quick -L/home/beam/Desktop/qt5-static/lib -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Qml -lrt -lQt5Network -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -L/home/beam/Desktop/qt5-static/lib -lQt5QuickTemplates2 -L/home/beam/Desktop/qt5-static/lib -L/home/beam/Desktop/qt5-static/lib -lQt5Quick -lQt5Gui -lqtlibpng -lqtharfbuzz -lQt5Qml -lrt -lQt5Network -lQt5Core -lpthread -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lGL 
+Cflags: -DQT_QUICKCONTROLS2_LIB -I${includedir}/QtQuickControls2 -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Quick
+

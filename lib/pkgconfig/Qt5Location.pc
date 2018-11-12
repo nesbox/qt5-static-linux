@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Location
+Description: Qt Location module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Location 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt5Positioning -L/home/beam/Desktop/qt5-static/lib -lclip2tri -lpoly2tri -lclipper -L/home/beam/Desktop/qt5-static/lib -lQt5Quick -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Qml -lrt -lQt5Network -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -L/home/beam/Desktop/qt5-static/lib -lclip2tri -lpoly2tri -lclipper -lGL 
+Cflags: -DQT_LOCATION_LIB -I${includedir}/QtLocation -I${includedir}
+Requires: Qt5Core Qt5Positioning Qt5Gui Qt5Quick Qt5Network Qt5Qml
+

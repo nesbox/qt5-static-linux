@@ -1,0 +1,15 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=release c++11 c++14 c++1z concurrent dbus reduce_exports reduce_relocations static stl properties animation textcodec big_codecs clock-monotonic codecs textdate datestring doubleconversion eventfd filesystemiterator filesystemwatcher gestures itemmodel proxymodel identityproxymodel inotify library mimetype process statemachine regularexpression settings sharedmemory sortfilterproxymodel stringlistmodel systemsemaphore temporaryfile threadsafe-cloexec translation xmlstream xmlstreamreader xmlstreamwriter
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -lm -licui18n -licuuc -licudata -L/home/beam/Desktop/qt5-static/lib -lqtpcre2 -ldl 
+Cflags: -DQT_CORE_LIB -I${includedir}/QtCore -I${includedir}
+

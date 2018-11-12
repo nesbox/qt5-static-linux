@@ -1,0 +1,14 @@
+prefix=/home/beam/Desktop/qt5-static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 3DQuickScene2D
+Description: Qt 3DQuickScene2D module
+Version: 5.11.0
+Libs: -L${libdir} -lQt53DQuickScene2D 
+Libs.private: -L/home/beam/Desktop/qt5-static/lib -lQt53DRender -L/home/beam/Desktop/qt5-static/lib -lQt5OpenGLExtensions -lQt53DQuick -L/home/beam/Desktop/qt5-static/lib -lQt53DCore -lQt5Quick -lQt5Gui -lGL -lqtlibpng -lqtharfbuzz -lQt5Qml -lrt -lQt5Network -lQt5Concurrent -lQt5Core -lm -licui18n -licuuc -licudata -lqtpcre2 -ldl -lpthread -lGL 
+Cflags: -DQT_3DQUICKSCENE2D_LIB -I${includedir}/Qt3DQuickScene2D -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt53DCore Qt53DRender Qt53DQuick
+
